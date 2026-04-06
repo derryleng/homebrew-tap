@@ -13,11 +13,21 @@ class MenubarGuard < Formula
     bin.install "menubar-guard"
   end
 
+  service do
+    run opt_bin/"menubar-guard"
+    keep_alive true
+    log_path var/"log/menubar-guard.log"
+    error_log_path var/"log/menubar-guard.log"
+  end
+
   def caveats
     <<~EOS
       menubar-guard requires Accessibility permission to function.
       Grant access in:
         System Settings > Privacy & Security > Accessibility
+
+      To start menubar-guard and enable it at login:
+        brew services start derryleng/tap/menubar-guard
     EOS
   end
 end
