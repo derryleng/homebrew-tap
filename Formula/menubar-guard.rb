@@ -6,10 +6,11 @@ class MenubarGuard < Formula
   license "MIT"
 
   depends_on :macos
-  depends_on xcode: ["14.0", :build]
 
   def install
-    system "swiftc", "-O", "-o", "menubar-guard", "main.swift", "-framework", "Cocoa"
+    system ENV.cc, "-O2", "-o", "menubar-guard", "main.c",
+           "-framework", "ApplicationServices",
+           "-framework", "CoreFoundation"
     bin.install "menubar-guard"
   end
 
