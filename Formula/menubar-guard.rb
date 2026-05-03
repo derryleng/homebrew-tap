@@ -1,8 +1,8 @@
 class MenubarGuard < Formula
   desc "Prevent the macOS cursor from straying into the menu bar"
   homepage "https://github.com/derryleng/menubar-guard"
-  url "https://github.com/derryleng/menubar-guard/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "f9f5455000db651c1399252f9f9fd2320efc2d040ba64b395f163f5098bf9a08"
+  url "https://github.com/derryleng/menubar-guard/archive/refs/tags/v1.1.0.tar.gz"
+  sha256 "bfef4220b1f75c9eeb4752d10e4489a06a1a836df110e8d624622569c14b275d"
   license "MIT"
 
   depends_on :macos
