@@ -1,6 +1,6 @@
 cask "wabi" do
-  version "1.0.0"
-  sha256 "1b285087874bb3e77d14e5fa09a5e701abbef712edf3c5cc6f92a7296b748c94"
+  version "1.0.1"
+  sha256 "fb7422a09def6155fe8e5ed92aa7797902e4da30cadc05e969b3959352ef1a98"
 
   url "https://github.com/derryleng/wabi/releases/download/v#{version}/Wabi.zip"
   name "Wabi"
